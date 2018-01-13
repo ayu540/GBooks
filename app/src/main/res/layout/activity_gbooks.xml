@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_gbooks"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anshultech.gbooks.GBooks"
+    android:orientation="vertical"
+    >
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:weightSum="2"-->
+        <!--&gt;-->
+    <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="Enter your text to search"-->
+        <!--android:id="@+id/editsearchbox"-->
+        <!--android:layout_weight="1.50"-->
+        <!--/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight=".50"-->
+            <!--android:text="ENTER"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Data found"
+        android:id="@+id/textempty_data"
+        tools:text="NO DATA FOUND"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textnointernet"
+        tools:text="NO INTERNET CONNECTION"
+        />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_gravity="center"
+        android:id="@+id/progressbar"
+        android:indeterminateTint="@color/colorPrimaryDark"
+        />
+</LinearLayout>
